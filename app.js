@@ -25,7 +25,7 @@ const specs = swaggerJsDoc({
       version: "1.0.0",
       description: "for employee panel",
     },
-    servers: [{ url: "http://localhost:7000" }],
+    servers: [{ url: ` http://localhost:${PORT}` }],
     components: {
       securitySchemes: {
         bearerAuth: {
