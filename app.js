@@ -25,7 +25,9 @@ const specs = swaggerJsDoc({
       version: "1.0.0",
       description: "for employee panel",
     },
-    servers: [{ url: ` http://localhost:${PORT}` }],
+    servers: [{ url: ` http://localhost:${PORT}` },
+               {url: 'https://erms-backend-e682.onrender.com'}
+    ],
     components: {
       securitySchemes: {
         bearerAuth: {
